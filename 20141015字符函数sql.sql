@@ -1,0 +1,24 @@
+SELECT * FROM studenttable
+SELECT GENDER, initcap(GENDER), studentname, initcap(studentname) FROM studenttable
+UPDATE STUDENTTABLE SET studentname = 'lily' WHERE studentname = 'lILY'
+UPDATE STUDENTTABLE SET studentname = 'RAVI' WHERE studentname = 'Ravi'
+SELECT STUDENTNAME, upper(STUDENTNAME), lower(STUDENTNAME) FROM studenttable
+SELECT STUDENTNAME, lpad(STUDENTNAME,5, '*&^'), rpad(studentname, 20, '#') FROM studenttable
+SELECT TESTT, lpad(TESTT, 20, '*') FROM studenttable
+SELECT TESTT,RPAD(TESTT,20,'*') FROM studenttable
+SELECT TESTT, rtrim(TESTT) FROM studenttable
+SELECT TESTT,LPAD(RTRIM(TESTT),20,'*') FROM studenttable
+SELECT TESTT,LTRIM(TESTT,'a') FROM studenttable
+SELECT TESTT,REPLACE(TESTT,'s') FROM studenttable
+SELECT TESTT,REPLACE(TESTT,'4','**') FROM studenttable
+SELECT TESTT,REPLACE(TESTT,NULL) FROM studenttable
+SELECT STUDENTNAME, substr(STUDENTNAME, 2, 3), substr(STUDENTNAME, -4, 3) FROM studenttable
+SELECT TESTT, substr(TESTT, 2, 3),substr(TESTT, -13, 2) FROM studenttable
+SELECT phone,SUBSTR(phone,1,3) || '-' || SUBSTR(phone,4,4) || '-' || SUBSTR(phone,8,4) PHONE2 FROM STUDENTTABLE
+SELECT FIRSTNAME,SUBSTR(FIRSTNAME,2) FROM studenttable
+SELECT STUDENTNAME, translate(STUDENTNAME,'n','N') FROM studenttable
+SELECT STUDENTNAME,INSTR(STUDENTNAME,'en') FROM studenttable
+SELECT STUDENTNAME,LENGTH(STUDENTNAME),TESTT,LENGTH(RTRIM(TESTT)) FROM studenttable
+SELECT STUDENTNAME,REPLACE(STUDENTNAME,'en','EN'),TRANSLATE(STUDENTNAME,'en','EN') FROM studenttable
+SELECT STUDENTNAME,REPLACE£¨STUDENTNAME,NULL) FROM studenttable
+SELECT chr(96) FROM studenttable
